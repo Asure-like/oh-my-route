@@ -5,9 +5,9 @@ const rp = require('request-promise')
 const download = require('download')
 
 // 京东cookie
-const cookie = 'pt_key=AAJmhQHOADDafbx79SSKVYa1aSrgy-PDMMv2p0CyY51GvY3ppcPRNNEid-9GgVT2H0Q_l4ShDVc; pt_pin=Asurelike'
+const cookie =process.env.JD_COOKIE
 // Server酱SCKEY
-const push_key = 'SCT84742TxzCIMl6QAMEJMBHKPUPFl1s3'
+const push_key = process.env.PUSH_KEY
 
 // 京东脚本文件
 const js_url = 'https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js'
